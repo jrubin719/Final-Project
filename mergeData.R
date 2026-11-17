@@ -56,6 +56,7 @@ acsdata <- acsdata |>
   mutate(state_code = substr(GEOID, 1, 2))
 
 states_to_intersect <- unique(precincts_cleaned$state_code)
+states_to_intersect <- sort(states_to_intersect)
 parts_list <- vector(mode = "list", length(states_to_intersect))
 names(parts_list) <- states_to_intersect
 
