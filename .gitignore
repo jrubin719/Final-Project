@@ -1,0 +1,6 @@
+# Ignore data in the data folder
+Data/
+
+# Ignore census api credentials
+.env
+.Rproj.user
