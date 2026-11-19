@@ -6,7 +6,7 @@ library(tidycensus)
 library(tigris)
 library(readxl)
 
-years <- 2014:2020
+years <- 2014:2021
 
 pull_va_tidycensus_data <- function(var_year, variable_code){
   
