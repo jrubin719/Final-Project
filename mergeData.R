@@ -92,3 +92,6 @@ precincts_final <- left_join(x = precincts_cleaned,
                              y = demographics,
                              by = c("prcnctd","year"))
 
+st_write(precincts_final, "Data/precinct_data_for_model.shp", append = FALSE)
+
+
