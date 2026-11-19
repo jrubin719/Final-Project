@@ -88,7 +88,7 @@ policysurvey <- policysurvey |>
     year = as.integer(Year),
     state = tolower(`State Abbreviation`)
   ) |>
-  filter(state %in% c("va")) |>
+  filter(state %in% c("va") & year >= 2014) |>
   rename(
     mail_excuse_req = `Excuse Required for Mail Voting`,
     all_mail = `All Vote-By-Mail Used`,
