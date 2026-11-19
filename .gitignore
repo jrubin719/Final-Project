@@ -1,5 +1,6 @@
 # Ignore data in the data folder
 Data/
+Data Assignment/
 
 # Ignore census api credentials
 .env
